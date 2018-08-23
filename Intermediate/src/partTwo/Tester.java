@@ -2,6 +2,9 @@ package partTwo;
 
 public class Tester {
 	public static void main(String[] args) {
+		
+		
+		Vehicle v1= new Vehicle(); 
 		Vehicle renault = new Vehicle(4, "green", "car");
 		Vehicle VW = new Vehicle (4, "green", "car");
 		Vehicle bike01 = new Vehicle(4, "red", "bike");
@@ -13,8 +16,7 @@ public class Tester {
 		gar.add(truck);		
 		//gar.calValue(bike01);
 		
-		gar.remove(truck);
-		
+		gar.remove(truck);		
 		gar.print();
 		
 		
