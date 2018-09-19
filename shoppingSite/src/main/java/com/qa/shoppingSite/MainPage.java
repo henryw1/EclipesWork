@@ -1,8 +1,10 @@
 package com.qa.shoppingSite;
 
+import java.io.File;
 import java.util.List;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
@@ -27,7 +29,8 @@ public class MainPage {
 			try {
 			if (img_text.equals(checker)) {				
 				s.click();
-				Thread.sleep(30000);					
+				Thread.sleep(30000);
+			
 					break;
 			}
 				} catch (InterruptedException e) {
@@ -35,13 +38,7 @@ public class MainPage {
 					e.printStackTrace();
 				}
 			}
-		
-		
-		// TODO Auto-generated method stub
-		
-//		for (iterable_type iterable_element : iterable) {
-//			
-//		}
+
 
 	}
 
