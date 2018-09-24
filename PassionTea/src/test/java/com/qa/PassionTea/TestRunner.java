@@ -11,21 +11,8 @@ import cucumber.api.CucumberOptions;
 import cucumber.api.junit.Cucumber;
 @RunWith(Cucumber.class)
 
-@CucumberOptions(features = "rc/test/java/teaTesting")
+@CucumberOptions(features = "src/test/java/TeaTesting.feature")
 
-public class TestRunner {
-	
-	
-	
-	
-//	public static void main(String[] args) {
-//		Result res = JUnitCore.runClasses(TestSuite.class);
-//		
-//		for (Failure fail : res.getFailures()) {
-//			System.out.println(fail.toString());
-//		}
-//		
-//		System.out.println(res.wasSuccessful());
-//	}
+public class TestRunner {	
 
 }
