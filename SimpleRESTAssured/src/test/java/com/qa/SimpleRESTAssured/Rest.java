@@ -74,14 +74,14 @@ public class Rest {
 	@When("^a user retrieves the film by the title IT$")
 	public void a_user_retrieves_the_film_by_the_title_IT() throws Throwable {
 		
-		response =request.when().get(constant.API_PATH );
+		response =request.when().get(constant.API_PATH + "&t=IT");
 	
 	}
 
 	@Then("^the Rated Field is equal to R$")
 	public void the_Rated_Field_is_equal_to_R() throws Throwable {
 
-		response.then().body("Rated", equalTo("PG-13"));
+		response.then().body("Rated", equalTo("R"));
 		System.out.println(response.getBody().prettyPrint());
 	    }
 
@@ -94,8 +94,9 @@ public class Rest {
 
 	@When("^a user retrieves the film by the title \"([^\"]*)\"$")
 	public void a_user_retrieves_the_film_by_the_title(String arg1) throws Throwable {
+		response = request.when().get(constant.API_PATH + "&"+ arg1); 
 		response.then().body("Title", equalTo(arg1));
-	    
+		System.out.println(response.getBody().prettyPrint());
 	}
 
 	@Then("^the Rated Field is equal to \"([^\"]*)\"$")
