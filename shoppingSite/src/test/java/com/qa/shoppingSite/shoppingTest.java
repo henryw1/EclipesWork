@@ -1,4 +1,4 @@
-package com.qa.shoppingSite;
+	package com.qa.shoppingSite;
 
 //import junit.framework.Test;
 import junit.framework.TestCase;
